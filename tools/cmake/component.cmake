@@ -130,7 +130,7 @@ function(__component_write_properties output_file)
             set(component_properties_text
                 "${component_properties_text}\nset(__component_${component_target}_${property} \"${val}\")")
         endforeach()
-        file(WRITE ${output_file} "${component_properties_text}")
+        file(APPEND ${output_file} "${component_properties_text}")
     endforeach()
 endfunction()
 

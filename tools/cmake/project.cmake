@@ -559,7 +559,7 @@ macro(project project_name)
             message(WARNING "enabled ccache in build but ccache program not found")
         endif()
     endif()
-
+    
     # The actual call to project()
     __project(${project_name} C CXX ASM)
 

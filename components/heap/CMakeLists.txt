@@ -16,7 +16,7 @@ set(srcs
 set(includes "include")
 
 if(NOT CONFIG_HEAP_TLSF_USE_ROM_IMPL)
-    set(priv_includes "tlsf")
+    set(priv_includes "tlsf/include" "tlsf")
     list(APPEND srcs "tlsf/tlsf.c")
 endif()
 
